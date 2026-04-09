@@ -33,9 +33,9 @@
             rdoHamBurger = new RadioButton();
             rdoBulgogiBurger = new RadioButton();
             rdoChickenBurger = new RadioButton();
-            pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            pictureBox3 = new PictureBox();
+            picHamBurger = new PictureBox();
+            picBulgogiBurger = new PictureBox();
+            picChickenBurger = new PictureBox();
             chkPotato = new CheckBox();
             chkSauce = new CheckBox();
             chkCheese = new CheckBox();
@@ -47,9 +47,9 @@
             lstOrder = new ListBox();
             btnOrder = new Button();
             btnClear = new Button();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picHamBurger).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picBulgogiBurger).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picChickenBurger).BeginInit();
             grpOrder.SuspendLayout();
             SuspendLayout();
             // 
@@ -84,7 +84,6 @@
             rdoBulgogiBurger.Name = "rdoBulgogiBurger";
             rdoBulgogiBurger.Size = new Size(170, 41);
             rdoBulgogiBurger.TabIndex = 2;
-            rdoBulgogiBurger.TabStop = true;
             rdoBulgogiBurger.Text = "불고기버거";
             rdoBulgogiBurger.UseVisualStyleBackColor = true;
             // 
@@ -96,39 +95,38 @@
             rdoChickenBurger.Name = "rdoChickenBurger";
             rdoChickenBurger.Size = new Size(143, 41);
             rdoChickenBurger.TabIndex = 3;
-            rdoChickenBurger.TabStop = true;
             rdoChickenBurger.Text = "치킨버거";
             rdoChickenBurger.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
+            // picHamBurger
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(251, 180);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(154, 104);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 4;
-            pictureBox1.TabStop = false;
+            picHamBurger.Image = (Image)resources.GetObject("picHamBurger.Image");
+            picHamBurger.Location = new Point(251, 180);
+            picHamBurger.Name = "picHamBurger";
+            picHamBurger.Size = new Size(154, 104);
+            picHamBurger.SizeMode = PictureBoxSizeMode.StretchImage;
+            picHamBurger.TabIndex = 4;
+            picHamBurger.TabStop = false;
             // 
-            // pictureBox2
+            // picBulgogiBurger
             // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(251, 310);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(154, 104);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 5;
-            pictureBox2.TabStop = false;
+            picBulgogiBurger.Image = (Image)resources.GetObject("picBulgogiBurger.Image");
+            picBulgogiBurger.Location = new Point(251, 310);
+            picBulgogiBurger.Name = "picBulgogiBurger";
+            picBulgogiBurger.Size = new Size(154, 104);
+            picBulgogiBurger.SizeMode = PictureBoxSizeMode.StretchImage;
+            picBulgogiBurger.TabIndex = 5;
+            picBulgogiBurger.TabStop = false;
             // 
-            // pictureBox3
+            // picChickenBurger
             // 
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(251, 440);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(154, 104);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 6;
-            pictureBox3.TabStop = false;
+            picChickenBurger.Image = (Image)resources.GetObject("picChickenBurger.Image");
+            picChickenBurger.Location = new Point(251, 440);
+            picChickenBurger.Name = "picChickenBurger";
+            picChickenBurger.Size = new Size(154, 104);
+            picChickenBurger.SizeMode = PictureBoxSizeMode.StretchImage;
+            picChickenBurger.TabIndex = 6;
+            picChickenBurger.TabStop = false;
             // 
             // chkPotato
             // 
@@ -149,6 +147,7 @@
             chkSauce.Name = "chkSauce";
             chkSauce.Size = new Size(123, 34);
             chkSauce.TabIndex = 7;
+            chkSauce.TabStop = false;
             chkSauce.Text = "소스 추가";
             chkSauce.UseVisualStyleBackColor = true;
             // 
@@ -160,6 +159,7 @@
             chkCheese.Name = "chkCheese";
             chkCheese.Size = new Size(123, 34);
             chkCheese.TabIndex = 6;
+            chkCheese.TabStop = false;
             chkCheese.Text = "치즈 추가";
             chkCheese.UseVisualStyleBackColor = true;
             // 
@@ -171,6 +171,7 @@
             chkCola.Name = "chkCola";
             chkCola.Size = new Size(74, 34);
             chkCola.TabIndex = 5;
+            chkCola.TabStop = false;
             chkCola.Text = "콜라";
             chkCola.UseVisualStyleBackColor = true;
             // 
@@ -216,7 +217,7 @@
             lblTotalCost.Location = new Point(17, 322);
             lblTotalCost.Name = "lblTotalCost";
             lblTotalCost.Size = new Size(145, 45);
-            lblTotalCost.TabIndex = 0;
+            lblTotalCost.TabIndex = 1;
             lblTotalCost.Text = "총 금액: ";
             // 
             // lstOrder
@@ -227,6 +228,7 @@
             lstOrder.Name = "lstOrder";
             lstOrder.Size = new Size(293, 244);
             lstOrder.TabIndex = 0;
+            lstOrder.TabStop = false;
             // 
             // btnOrder
             // 
@@ -265,9 +267,9 @@
             Controls.Add(chkCheese);
             Controls.Add(chkSauce);
             Controls.Add(chkPotato);
-            Controls.Add(pictureBox3);
-            Controls.Add(pictureBox2);
-            Controls.Add(pictureBox1);
+            Controls.Add(picChickenBurger);
+            Controls.Add(picBulgogiBurger);
+            Controls.Add(picHamBurger);
             Controls.Add(rdoChickenBurger);
             Controls.Add(rdoBulgogiBurger);
             Controls.Add(rdoHamBurger);
@@ -277,9 +279,9 @@
             Controls.Add(grpOrder);
             Name = "Form1";
             Text = "Burger Kiosk v1.0";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picHamBurger).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picBulgogiBurger).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picChickenBurger).EndInit();
             grpOrder.ResumeLayout(false);
             grpOrder.PerformLayout();
             ResumeLayout(false);
@@ -292,9 +294,9 @@
         private RadioButton rdoHamBurger;
         private RadioButton rdoBulgogiBurger;
         private RadioButton rdoChickenBurger;
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox3;
+        private PictureBox picHamBurger;
+        private PictureBox picBulgogiBurger;
+        private PictureBox picChickenBurger;
         private CheckBox chkPotato;
         private CheckBox chkSauce;
         private CheckBox chkCheese;
